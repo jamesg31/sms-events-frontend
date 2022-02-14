@@ -26,23 +26,27 @@ class App extends React.Component {
                         <Grid.Column width={1} only='tablet computer'>
                             <Segment vertical inverted compact style={{ minHeight: '100vh' }}>
                                 <Menu icon='labeled' vertical inverted>
-                                    <Menu.Item as='a'>
+                                    <Menu.Item>
                                         <Icon name='home' />
-                                        Home
+                                        Dashboard
                                     </Menu.Item>
-                                    <Menu.Item as='a'>
-                                        <Icon name='gamepad' />
-                                        Games
+                                    <Menu.Item>
+                                        <Icon name='tasks' />
+                                        Tasks
                                     </Menu.Item>
-                                    <Menu.Item as='a'>
-                                        <Icon name='camera' />
-                                        Channels
+                                    <Menu.Item>
+                                        <Icon name='phone' />
+                                        Users
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Icon name='settings' />
+                                        Setup
                                     </Menu.Item>
                                 </Menu>
                             </Segment>
                         </Grid.Column>
                         <Grid.Column mobile={16} tablet={15} computer={15}>
-                            <Dashboard />
+                            <Dashboard toggleMenu={this.toggleMenu} />
                         </Grid.Column>
                     </Grid>
                 </div>

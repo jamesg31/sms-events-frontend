@@ -17,15 +17,19 @@ export default class SidebarMenu extends React.Component {
                 >
                     <Menu.Item as='a'>
                         <Icon name='home' />
-                        Home
+                        Dashboard
                     </Menu.Item>
                     <Menu.Item as='a'>
-                        <Icon name='gamepad' />
-                        Games
+                        <Icon name='tasks' />
+                        Tasks
                     </Menu.Item>
                     <Menu.Item as='a'>
-                        <Icon name='camera' />
-                        Channels
+                        <Icon name='phone' />
+                        Users
+                    </Menu.Item>
+                    <Menu.Item as='a'>
+                        <Icon name='settings' />
+                        Setup
                     </Menu.Item>
                 </Sidebar>
 
